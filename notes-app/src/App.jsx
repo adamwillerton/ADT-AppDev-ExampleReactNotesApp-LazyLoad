@@ -61,7 +61,7 @@ export default function App() {
       </div>
 
       <img src={note} alt="" />
-      <img src={notes} alt="" />
+      <img src={note} alt="" />
 
       <ul style={{ listStyle: 'none', padding: 0, marginTop: 16 }}>
         {filtered.map(n => (
