@@ -1,5 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import note from './assets/note.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // Simple localStorage-backed repository
 const KEY = 'notes.v1';
@@ -70,9 +72,9 @@ export default function App() {
         {filtered.length === 0 && <li style={{ color: '#666' }}>No notes to show.</li>}
       </ul>
 
-      <img src={note} alt="" />
-      <img src={note} alt="" />
-      <img src={note} alt="" />
+      <LazyLoadImage alt="Product name" effect="blur" src="/assets/note.png"/>
+      <LazyLoadImage alt="Product name" effect="blur" src="/assets/note.png"/>
+      <LazyLoadImage alt="Product name" effect="blur" src="/assets/note.png"/>
     </main>
   );
 }
