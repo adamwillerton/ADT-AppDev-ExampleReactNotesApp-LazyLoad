@@ -58,6 +58,9 @@ export default function App() {
         <Filter value="done" current={filter} set={setFilter} />
       </div>
 
+      <img src="notes.png"></img>
+      <img src="note.png"></img>
+
       <ul style={{ listStyle: 'none', padding: 0, marginTop: 16 }}>
         {filtered.map(n => (
           <li key={n.id} style={{ display: 'grid', gridTemplateColumns: '1fr auto auto', alignItems: 'center', gap: 8, padding: '6px 0', borderBottom: '1px solid #eee' }}>
