@@ -1,4 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import note from './assets/note.png';
+import notes from './assets/notes.png';
 
 // Simple localStorage-backed repository
 const KEY = 'notes.v1';
@@ -58,8 +60,8 @@ export default function App() {
         <Filter value="done" current={filter} set={setFilter} />
       </div>
 
-      <img src="notes.png"></img>
-      <img src="note.png"></img>
+      <img src={note} alt="" />
+      <img src={notes} alt="" />
 
       <ul style={{ listStyle: 'none', padding: 0, marginTop: 16 }}>
         {filtered.map(n => (
