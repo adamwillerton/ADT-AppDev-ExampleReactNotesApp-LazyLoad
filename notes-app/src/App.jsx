@@ -72,9 +72,9 @@ export default function App() {
         {filtered.length === 0 && <li style={{ color: '#666' }}>No notes to show.</li>}
       </ul>
 
-      <LazyLoadImage alt="Product name" effect="blur" src="/assets/note.png"/>
-      <LazyLoadImage alt="Product name" effect="blur" src="/assets/note.png"/>
-      <LazyLoadImage alt="Product name" effect="blur" src="/assets/note.png"/>
+      <LazyLoadImage alt="Product name" effect="blur" src={note}/>
+      <LazyLoadImage alt="Product name" effect="blur" src={note}/>
+      <LazyLoadImage alt="Product name" effect="blur" src={note}/>
     </main>
   );
 }
