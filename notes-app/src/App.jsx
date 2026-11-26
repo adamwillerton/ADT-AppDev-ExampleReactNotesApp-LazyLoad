@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import note from './assets/note.png';
-import notes from './assets/notes.png';
+import note from './assets/notes.png';
+import notes from './assets/note.png';
 
 // Simple localStorage-backed repository
 const KEY = 'notes.v1';
