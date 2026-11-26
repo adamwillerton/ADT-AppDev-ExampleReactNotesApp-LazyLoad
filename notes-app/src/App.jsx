@@ -74,9 +74,27 @@ export default function App() {
         {filtered.length === 0 && <li style={{ color: '#666' }}>No notes to show.</li>}
       </ul>
 
-      <LazyLoadImage alt="Product name" effect="blur" src={note1}/>
-      <LazyLoadImage alt="Product name" effect="blur" src={note2}/>
-      <LazyLoadImage alt="Product name" effect="blur" src={note3}/>
+        <LazyLoadImage
+          alt="Note 1"
+          effect="blur"
+          src={note1}
+        />
+        
+        <div style={{ height: '100vh' }}></div>
+        
+        <LazyLoadImage
+          alt="Note 2"
+          effect="blur"
+          src={note2}
+        />
+        
+        <div style={{ height: '100vh' }}></div>
+        
+        <LazyLoadImage
+          alt="Note 3"
+          effect="blur"
+          src={note3}
+        />
     </main>
   );
 }
