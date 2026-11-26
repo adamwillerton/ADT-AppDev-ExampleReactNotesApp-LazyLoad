@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import note from './assets/note.png';
-import notes from './assets/notes.png';
 
 // Simple localStorage-backed repository
 const KEY = 'notes.v1';
@@ -60,9 +59,6 @@ export default function App() {
         <Filter value="done" current={filter} set={setFilter} />
       </div>
 
-      <img src={note} alt="" />
-      <img src={note} alt="" />
-
       <ul style={{ listStyle: 'none', padding: 0, marginTop: 16 }}>
         {filtered.map(n => (
           <li key={n.id} style={{ display: 'grid', gridTemplateColumns: '1fr auto auto', alignItems: 'center', gap: 8, padding: '6px 0', borderBottom: '1px solid #eee' }}>
@@ -73,6 +69,10 @@ export default function App() {
         ))}
         {filtered.length === 0 && <li style={{ color: '#666' }}>No notes to show.</li>}
       </ul>
+
+      <img src={note} alt="" />
+      <img src={note} alt="" />
+      <img src={note} alt="" />
     </main>
   );
 }
